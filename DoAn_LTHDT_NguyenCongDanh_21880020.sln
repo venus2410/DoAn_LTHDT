@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoAn_LTHDT_NguyenCongDanh_21880020", "DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020.csproj", "{5409ED3B-8DFC-42DF-A1E0-E681F57878EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoAn_LTHDT_NguyenCongDanh_21880020", "DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020.csproj", "{5409ED3B-8DFC-42DF-A1E0-E681F57878EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{8DAF9D52-1225-453C-A734-33F7825EA3C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{5C1A544B-9B91-46F9-B512-454EE038AA98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{1499CE23-A623-47EC-A013-ECA6F6A94F2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{5409ED3B-8DFC-42DF-A1E0-E681F57878EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5409ED3B-8DFC-42DF-A1E0-E681F57878EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5409ED3B-8DFC-42DF-A1E0-E681F57878EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAF9D52-1225-453C-A734-33F7825EA3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAF9D52-1225-453C-A734-33F7825EA3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAF9D52-1225-453C-A734-33F7825EA3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAF9D52-1225-453C-A734-33F7825EA3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C1A544B-9B91-46F9-B512-454EE038AA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1A544B-9B91-46F9-B512-454EE038AA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1A544B-9B91-46F9-B512-454EE038AA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1A544B-9B91-46F9-B512-454EE038AA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1499CE23-A623-47EC-A013-ECA6F6A94F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1499CE23-A623-47EC-A013-ECA6F6A94F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1499CE23-A623-47EC-A013-ECA6F6A94F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1499CE23-A623-47EC-A013-ECA6F6A94F2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

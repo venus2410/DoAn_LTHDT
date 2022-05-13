@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BQbs8m2P3kE8jB64uKHsfCD0/VPOEbjGc87p2nzSYCxoeIkdQSzLVzjuVIVs5tZIzgV7MxMledQclHwe9bhmCA==",
+  "dgSpecHash": "le7AKnHZc/8hlCHdr/pqdiJXikq6o3y9JTqkU6O2gdSfIeffDPrcgR/Qd8EFcBVklbtYqQsoOJn7pz+64hP6Zg==",
   "success": true,
   "projectFilePath": "D:\\Hoc Tap\\HK2 2021-2022\\LTHDT\\DoAn_LTHDT_NguyenCongDanh_21880020\\DoAn_LTHDT_NguyenCongDanh_21880020\\DoAn_LTHDT_NguyenCongDanh_21880020\\DoAn_LTHDT_NguyenCongDanh_21880020.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
