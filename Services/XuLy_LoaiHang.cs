@@ -51,9 +51,9 @@ namespace Services
                 List<LoaiHang> lst = DocLuuLH.DocLoaiHang();
                 return new ServiceResult<List<LoaiHang>>(true, lst, null);
             }
-            catch
+            catch(Exception ex)
             {
-                throw new Exception("Không tìm thấy file lưu trữ");
+                return new ServiceResult<List<LoaiHang>>(false, null, ex.Message);
             }
         }
         public ServiceResult<List<LoaiHang>> TimKiemLoaiHang(string noiDung)
@@ -125,15 +125,22 @@ namespace Services
                 return new ServiceResult<bool>(false, false, ex.Message);
             }
         }
-        public List<string> TimTenLoaiHang(List<MatHang> lstMaLH)
+        public ServiceResult<List<string>> TimTenLoaiHang(List<MatHang> lstMaLH)
         {
-            List<string> lstKQ = new List<string>();
-            foreach (MatHang mh in lstMaLH)
+            try
             {
-                LoaiHang lh = TimKiemTheoID(mh.Loai).Data;
-                lstKQ.Add(lh.TenLH);
+                List<string> lstKQ = new List<string>();
+                foreach (MatHang mh in lstMaLH)
+                {
+                    LoaiHang lh = TimKiemTheoID(mh.Loai).Data;
+                    lstKQ.Add(lh.TenLH);
+                }
+                return new ServiceResult<List<string>>(true,lstKQ,null);
             }
-            return lstKQ;
+            catch(Exception ex)
+            {
+                return new ServiceResult<List<string>>(false, null, ex.Message);
+            }
         }
         public ServiceResult<bool> XoaLoaiHang(string id)
         {

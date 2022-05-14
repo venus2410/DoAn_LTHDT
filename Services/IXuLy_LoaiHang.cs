@@ -13,7 +13,7 @@ namespace Services
         ServiceResult<List<LoaiHang>> TimKiemLoaiHang(string noiDung);
         ServiceResult<LoaiHang> TimKiemTheoID(string id);
         ServiceResult<bool> SuaLoaiHang(LoaiHang lh);
-        List<string> TimTenLoaiHang(List<MatHang> lstMaLH);
+        ServiceResult<List<string>> TimTenLoaiHang(List<MatHang> lstMaLH);
 
         ServiceResult<bool> XoaLoaiHang(string id);
     }

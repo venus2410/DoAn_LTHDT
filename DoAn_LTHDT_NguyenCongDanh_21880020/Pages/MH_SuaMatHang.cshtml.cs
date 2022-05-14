@@ -12,7 +12,7 @@ namespace DoAn_LTHDT_NguyenCongDanh_21880020.Pages
     public class MH_SuaMatHangModel : PageModel
     {
         public string chuoi = string.Empty;
-        public MatHang mh=new MatHang();
+        public MatHang mh;
         public string maLHChon;
         public List<LoaiHang> lstLH;
         IXuLy_MatHang xuLyMH;
@@ -39,7 +39,7 @@ namespace DoAn_LTHDT_NguyenCongDanh_21880020.Pages
         }
         public void OnGet()
         {
-          var kq = xuLyMH.TimKiemTheoID(Id);
+            var kq = xuLyMH.TimKiemTheoID(Id);
             if (kq.IsSuccess)
             {
                 maLHChon = kq.Data.Loai;

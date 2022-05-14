@@ -7,6 +7,8 @@
         <input name="noiDungTimKiem" />
         <button type="submit">Tìm kiếm</button>
     </form>
+    @if (Model.lstLH != null)
+    {
     <table>
         <tr>
             <th>Mã LH</th>
@@ -25,5 +27,6 @@
             </tr>
         }
     </table>
+    }
     @Model.chuoi
 </div>

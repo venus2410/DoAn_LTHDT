@@ -12,7 +12,7 @@ namespace DoAn_LTHDT_NguyenCongDanh_21880020.Pages
     public class MH_TimKiemLoaiHangModel : PageModel
     {
         public string chuoi = string.Empty;
-        public List<LoaiHang> lstLH = new List<LoaiHang>();
+        public List<LoaiHang> lstLH;
         IXuLy_LoaiHang xuLy;
         [BindProperty]
         public string noiDungTimKiem { get; set; }

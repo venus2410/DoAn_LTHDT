@@ -22,6 +22,8 @@ namespace DoAn_LTHDT_NguyenCongDanh_21880020.Pages
         {
             xuLyLH = new XuLy_LoaiHang();
             xuLyMH = new XuLy_MatHang();
+            lstMH = new List<MatHang>();
+            lstTenLoai = new List<string>();
         }
         public void OnGet()
         {
@@ -29,7 +31,9 @@ namespace DoAn_LTHDT_NguyenCongDanh_21880020.Pages
             if (kq.IsSuccess)
             {
                 lstMH = kq.Data;
-                lstTenLoai = xuLyLH.TimTenLoaiHang(lstMH);
+                var kq2 = xuLyLH.TimTenLoaiHang(lstMH);
+                lstTenLoai = kq2.Data;
+                chuoi = kq2.Message;
             }
             else
             {
@@ -44,7 +48,9 @@ namespace DoAn_LTHDT_NguyenCongDanh_21880020.Pages
                 if (kq.Data.Count>0)
                 {
                     lstMH = kq.Data;
-                    lstTenLoai = xuLyLH.TimTenLoaiHang(lstMH);
+                    var kq2= xuLyLH.TimTenLoaiHang(lstMH);
+                    lstTenLoai = kq2.Data;
+                    chuoi = kq2.Message;
                 }
                 else
                 {
