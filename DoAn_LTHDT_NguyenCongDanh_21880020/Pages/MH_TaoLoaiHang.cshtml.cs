@@ -9,7 +9,7 @@ using Services;
 
 namespace DoAn_LTHDT_NguyenCongDanh_21880020.Pages
 {
-    public class MH_ThemLoaiHangModel : PageModel
+    public class MH_TaoLoaiHangModel : PageModel
     {
         public string chuoi = string.Empty;
         IXuLy_LoaiHang xuLy;
@@ -17,7 +17,7 @@ namespace DoAn_LTHDT_NguyenCongDanh_21880020.Pages
         public string Ma { get; set; }
         [BindProperty]
         public string Ten { get; set; }
-        public MH_ThemLoaiHangModel()
+        public MH_TaoLoaiHangModel()
         {
             xuLy = new XuLy_LoaiHang();
         }

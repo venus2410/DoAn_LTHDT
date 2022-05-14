@@ -11,6 +11,10 @@ namespace Entities
         public string NgaySX { get; set; }
         public string Loai { get; set; }
         public int Gia { get; set; }
+        public MatHang()
+        {
+
+        }
         public MatHang(string ma, string ten, string hanDung, string ctySX, string ngaySX, string loai, int gia)
         {
             this.MaMH = ma;
