@@ -9,10 +9,13 @@ namespace Services
     public class XuLy_MatHang:IXuLy_MatHang
     {
         IDocLuu_MatHang DocLuuMH;
-        DocLuu_HoaDon DocLuuHD;
+        IDocLuu_HoaDonXuat DocLuuHDX;
+        IDocLuu_HoaDonNhap DocLuuHDN;
         public XuLy_MatHang()
         {
             DocLuuMH = new DocLuu_MatHang();
+            DocLuuHDX = new DocLuu_HoaDonXuat();
+            DocLuuHDN = new DocLuu_HoaDonNhap();
         }
         public static bool HopLe(MatHang mh)
         {
@@ -152,22 +155,20 @@ namespace Services
             try
             {
                 //xoa hoa don nhap xuat co mat hang
-                DocLuuHD = new DocLuu_HoaDonXuat();
-                List<HoaDon> lstHDX = DocLuuHD.DocHoaDon();
+                List<HoaDon> lstHDX = DocLuuHDX.DocHoaDon();
                 foreach (HoaDon hdx in lstHDX)
                 {
                     if (hdx.MatHangChon == id)
                     {
-                        DocLuuHD.XoaHoaDon(hdx.MaHoaDon);
+                        DocLuuHDX.XoaHoaDon(hdx.MaHoaDon);
                     }
                 }
-                DocLuuHD = new DocLuu_HoaDonNhap();
-                List<HoaDon> lstHDN = DocLuuHD.DocHoaDon();
+                List<HoaDon> lstHDN = DocLuuHDN.DocHoaDon();
                 foreach (HoaDon hdn in lstHDN)
                 {
                     if (hdn.MatHangChon == id)
                     {
-                        DocLuuHD.XoaHoaDon(hdn.MaHoaDon);
+                        DocLuuHDN.XoaHoaDon(hdn.MaHoaDon);
                     }
                 }
 

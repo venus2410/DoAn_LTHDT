@@ -1,0 +1,13 @@
+﻿@page
+@model DoAn_LTHDT_NguyenCongDanh_21880020.Pages.MH_XoaLoaiHangModel
+@{
+}
+<h2>Xóa loại hàng</h2>
+<form method="post">
+    @Model.chuoi<br />
+    @if (Model.timThay)
+    {
+        <button type="submit">Xóa</button>
+    }
+    <a href="/MH_TimKiemLoaiHang">Quay lại</a>
+</form>
