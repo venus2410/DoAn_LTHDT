@@ -132,8 +132,15 @@ namespace Services
                 List<string> lstKQ = new List<string>();
                 foreach (MatHang mh in lstMaLH)
                 {
-                    LoaiHang lh = TimKiemTheoID(mh.Loai).Data;
-                    lstKQ.Add(lh.TenLH);
+                    var lh = TimKiemTheoID(mh.Loai).Data;
+                    if (lh != null)
+                    {
+                        lstKQ.Add(lh.TenLH);
+                    }
+                    else
+                    {
+                        lstKQ.Add("Chưa xác định");
+                    }
                 }
                 return new ServiceResult<List<string>>(true,lstKQ,null);
             }
