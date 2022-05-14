@@ -8,6 +8,10 @@ namespace Entities
     {
         public string MaLH { get; set; }
         public string TenLH { get; set; }
+        public LoaiHang()
+        {
+
+        }
         public LoaiHang(string ma, string ten)
         {
             this.MaLH = ma;
