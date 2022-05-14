@@ -92,7 +92,7 @@ namespace Services
                         return new ServiceResult<LoaiHang>(true, LH, null);
                     }
                 }
-                return new ServiceResult<LoaiHang>(false, null, "Không tìm thấy mặt hàng");
+                return new ServiceResult<LoaiHang>(false, null, "Không tìm thấy loại hàng");
             }
             catch (Exception ex)
             {

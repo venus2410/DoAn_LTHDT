@@ -1,0 +1,17 @@
+﻿@page
+@model DoAn_LTHDT_NguyenCongDanh_21880020.Pages.MH_SuaLoaiHangModel
+@{
+}
+<div class="container w-50">
+    <div>
+        <h2>Sửa loại hàng</h2>
+        <form method="post">
+            <label>Mã loại hàng:</label>
+            @Model.lh.MaLH<br />
+            <label>Tên loại hàng:</label>
+            <input name="ten" value="@Model.lh.TenLH"><br />
+            <input type="submit" value="Sửa" /><a href="/MH_TimKiemLoaiHang">Quay lại</a>
+        </form>
+    </div>
+    @Model.chuoi
+</div>
