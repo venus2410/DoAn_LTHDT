@@ -105,7 +105,7 @@ namespace Services
                         return new ServiceResult<HoaDon>(true, HDN, null);
                     }
                 }
-                return new ServiceResult<HoaDon>(false, null, "Không tìm thấy mặt hàng");
+                return new ServiceResult<HoaDon>(false, null, "Không tìm thấy hóa đơn");
             }
             catch (Exception ex)
             {
@@ -142,7 +142,6 @@ namespace Services
             {
                 if (HopLe(HoaDonNhap))
                 {
-
                     HoaDon hdCu = TimKiemTheoID(HoaDonNhap.MaHoaDon).Data;
                     int chenhLech;
                     if (hdCu.MatHangChon == HoaDonNhap.MatHangChon)
