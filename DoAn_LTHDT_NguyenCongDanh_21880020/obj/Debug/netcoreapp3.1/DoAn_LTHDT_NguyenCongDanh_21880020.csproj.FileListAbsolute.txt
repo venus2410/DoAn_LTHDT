@@ -52,3 +52,4 @@ D:\Hoc Tap\HK2 2021-2022\LTHDT\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_Ngu
 D:\Hoc Tap\HK2 2021-2022\LTHDT\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020\obj\Debug\netcoreapp3.1\Razor\Pages\MH_TimKiemMatHang.cshtml.g.cs
 D:\Hoc Tap\HK2 2021-2022\LTHDT\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020\obj\Debug\netcoreapp3.1\Razor\Pages\MH_XoaMatHang.cshtml.g.cs
 D:\Hoc Tap\HK2 2021-2022\LTHDT\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020\obj\Debug\netcoreapp3.1\Razor\Pages\MH_TaoHoaDonNhap.cshtml.g.cs
+D:\Hoc Tap\HK2 2021-2022\LTHDT\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020\DoAn_LTHDT_NguyenCongDanh_21880020\obj\Debug\netcoreapp3.1\Razor\Pages\MH_TimKiemHoaDonNhap.cshtml.g.cs

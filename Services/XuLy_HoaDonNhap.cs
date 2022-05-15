@@ -79,7 +79,8 @@ namespace Services
                 List<HoaDon> lstKQuaTKiem = new List<HoaDon>();
                 foreach (HoaDon HDN in lstHDN)
                 {
-                    if (HDN.MatHangChon.Contains(noiDungTimKiem) || HDN.MaHoaDon.Contains(noiDungTimKiem))
+                    if (HDN.MatHangChon.Contains(noiDungTimKiem) || HDN.MaHoaDon.Contains(noiDungTimKiem)
+                        || xuLyMH.TimTenTheoID(HDN.MatHangChon).Data.Contains(noiDungTimKiem))
                     {
                         lstKQuaTKiem.Add(HDN);
                     }
