@@ -1,0 +1,37 @@
+﻿@page
+@model DoAn_LTHDT_NguyenCongDanh_21880020.Pages.MH_SuaHoaDonXuatModel
+@using Entities
+<h2>Sửa hóa đơn xuất</h2>
+@if (Model.hdBanDau!=null)
+{
+    <form method="post">
+        <div class="row">
+            <div class="col-4">
+                <label>Mã hóa đơn xuất</label>
+                <input name="maHD" class="float-right" value="@Model.hdBanDau.MaHoaDon" readonly /><br />
+                <label>Mặt hàng</label>
+                <select name="mhChon" id="mhChon" class="float-right w-50">
+                    @foreach (MatHang mh in Model.lstMH)
+                    {
+                        if (mh.MaMH == Model.hdBanDau.MatHangChon)
+                        {
+                            <option value="@mh.MaMH" selected>@mh.TenMH</option>
+                        }
+                        else
+                        {
+                            <option value="@mh.MaMH">@mh.TenMH</option>
+                        }
+                    }
+                </select><br />
+                <label>Số lượng</label>
+                <input name="soLuong" type="number" id="soLuong" required min="0" class="float-right" value="@Model.hdBanDau.SoLuong" /><br />
+                <button type="submit">Sửa</button>
+                <a href="/MH_TimKiemHoaDonXuat">Quay lại</a>
+            </div>
+        </div>
+    </form>
+}
+else
+{
+    @Model.chuoi <a href="/MH_SuaHoaDonXuat?id=@Model.Id">Quay lại</a>
+}

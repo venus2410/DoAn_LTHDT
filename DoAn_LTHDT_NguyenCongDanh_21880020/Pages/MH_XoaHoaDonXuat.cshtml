@@ -1,0 +1,12 @@
+﻿@page
+@model DoAn_LTHDT_NguyenCongDanh_21880020.Pages.MH_XoaHoaDonXuatModel
+@using Entities;
+<h2>Xóa hóa đơn xuất</h2>
+<form method="post">
+    @Model.chuoi
+    @if (Model.hdn!=null)
+    {
+        <button type="submit">Xóa</button>
+    }
+    <a href="/MH_TimKiemHoaDonNhap">Quay lại</a>
+</form>

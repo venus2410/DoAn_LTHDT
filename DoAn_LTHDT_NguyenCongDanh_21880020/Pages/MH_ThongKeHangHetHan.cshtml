@@ -1,0 +1,25 @@
+﻿@page
+@model DoAn_LTHDT_NguyenCongDanh_21880020.Pages.MH_ThongKeHangHetHanModel
+@using Entities;
+<h2>Thống kê hàng hết hạn</h2>
+@if(Model.lstHangHetHan != null)
+{
+    <table>
+        <tr>
+            <th>Mã mặt hàng</th>
+            <th>Tên mặt hàng</th>
+            <th>Số lượng</th>
+            <th>Hạn dùng</th>
+        </tr>
+        @foreach (HangTon ht in Model.lstHangHetHan)
+        {
+            <tr>
+                <td>@ht.MaMH</td>
+                <td>@ht.TenMH</td>
+                <td>@ht.SoLuongTon</td>
+                <td>@ht.HanSD</td>
+            </tr>
+        }
+    </table>
+}
+@Model.chuoi
