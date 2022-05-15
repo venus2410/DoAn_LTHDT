@@ -37,7 +37,7 @@ namespace Services
                 {
                     return new ServiceResult<bool>(false, false, "Mã hóa đơn đã tồn tại, vui lòng chọn mã mặt hàng khác");
                 }
-                docLuuHDN.LuuHoaDonNhap(HDN);
+                docLuuHDN.TaoHoaDon(HDN);
                 return new ServiceResult<bool>(true, true, null);
             }
             catch (Exception ex)

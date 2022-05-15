@@ -1,0 +1,35 @@
+﻿@page
+@model DoAn_LTHDT_NguyenCongDanh_21880020.Pages.MH_TimKiemHoaDonXuatModel
+@using Entities;
+
+<h2>Tìm kiếm hóa đơn xuất</h2>
+@if (Model.lstHDX != null&&Model.lstTenMH!=null)
+{
+    <form method="post">
+        <input name="noiDungTimKiem" />
+        <button type="submit">Tìm kiếm</button>
+    </form>
+    <table>
+        <tr>
+            <th>Mã hóa đơn</th>
+            <th>Mã mặt hàng</th>
+            <th>Tên mặt hàng</th>
+            <th>Số lượng</th>
+            <th></th>
+        </tr>
+        @for (int i = 0; i < Model.lstHDX.Count; i++)
+        {
+            <tr>
+                <td>@Model.lstHDX[i].MaHoaDon</td>
+                <td>@Model.lstHDX[i].MatHangChon</td>
+                <td>@Model.lstTenMH[i]</td>
+                <td>@Model.lstHDX[i].SoLuong</td>
+                <td>
+                    <a href="/MH_SuaHoaDonXuat?id=@Model.lstHDX[i].MaHoaDon">Sửa</a>
+                    <a href="/MH_XoaHoaDonXuat?id=@Model.lstHDX[i].MaHoaDon">Xóa</a>
+                </td>
+            </tr>
+        }
+    </table>       
+}
+@Model.chuoi

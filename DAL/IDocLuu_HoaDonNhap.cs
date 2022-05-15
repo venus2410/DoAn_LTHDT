@@ -9,7 +9,7 @@ namespace DAL
     {
         List<HoaDon> DocHoaDon();
         void LuuDanhSachHoaDon(List<HoaDon> ds);
-        void LuuHoaDonNhap(HoaDon hoaDon);
+        void TaoHoaDon(HoaDon hoaDon);
         bool SuaHoaDon(HoaDon hoaDon);
         bool XoaHoaDon(string id);
     }

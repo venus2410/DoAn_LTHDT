@@ -31,7 +31,7 @@ namespace DAL
             writer.Close();
         }
         //ok
-        public void LuuHoaDonNhap(HoaDon hoaDon)
+        public void TaoHoaDon(HoaDon hoaDon)
         {
             var dSHoaDon = DocHoaDon();
             dSHoaDon.Add(hoaDon);
